@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/owfont-regular.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://kit.fontawesome.com/15cf60a7a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        
+        <div class="audio__player">
+          <audio src=""></audio>
+          <button class="audio prev__track"><i class="fa-solid fa-backward-step"></i></button>
+          <button class="audio"><i class="fa-solid fa-circle-play play"></i></button>
+          <button class="audio next__track"><i class="fa-solid fa-forward-step"></i></button>
+          <div class="play__list"></div>
+        </div>
+
+        <div class="weather">
+            <form class="weather__form"><input class="city" value="Москва"></form>
+            <div class="white__line"></div>
+            <i class="weather-icon owf"></i>
+            <div class="temperature"></div>
+            <div class="weather__description"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="slider__buttons">
+        <div class="arrows left__arrow">
+          <i class="fa-solid fa-arrow-left-long"></i>
+        </div>
+        <div class="arrows right__arrow">
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+      </div>
+      <time class="time"></time>
+      <date class="date"></date>
+      <div class="clock__text">
+        <span class="clock__title"></span>
+        <input placeholder="[Enter name]" class="clock__input" type="text" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <section class="random__quote">
+          <button class="refresh__quote"><i class="fa-solid fa-arrows-rotate"></i></button>
+          <span class="quote"></span>
+          <span class="author"></span>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
